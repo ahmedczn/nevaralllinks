@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nevarall.links</title>
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            background: url('https://www.raed.net/img?id=574993') center/cover no-repeat;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            transition: box-shadow 0.3s ease, opacity 0.3s ease; /* تحديث تأثير توهج الحواف والشفافية */
+            opacity: 0.8; /* تحديد شفافية الخلفية */
+        }
+
+        #container:hover {
+            box-shadow: 0 0 20px #8e44ad; /* لون بنفسجي عند تحويل المؤشر إليه */
+            opacity: 1; /* استعادة الشفافية الكاملة عند التحويل */
+        }
+
+        #buttons {
+            margin-top: 20px;
+            position: relative; /* ضمان عدم تأثير الأزرار على شفافية الخلفية */
+            z-index: 1; /* تحديد ترتيب الطبقات للأزرار فوق الخلفية */
+        }
+
+        #profile-image {
+            border-radius: 50%;
+            margin-bottom: 10px;
+            width: 25%;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .button {
+            padding: 15px 30px;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #8e44ad; /* تحديث لون الزر عند تحويل المؤشر إليه */
+            box-shadow: 0 0 20px #8e44ad; /* تأثير توهج الحواف عند تحويل المؤشر إليها */
+        }
+
+        #tiktok {
+            background-color: #69c9d0;
+        }
+
+        #instagram {
+            background-color: #bc2a8d;
+        }
+
+        #discord {
+            background-color: #7289da;
+        }
+
+        #profile-link {
+            pointer-events: none;
+        }
+
+        #profile-image:hover {
+            box-shadow: 0 0 20px #8e44ad; /* لون بنفسجي عند تحويل المؤشر إليه */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <a id="profile-link" href="https://www.raed.net/" target="_blank" title="https://www.raed.net/">
+            <img id="profile-image" src="https://www.raed.net/img?id=574875" alt="https://www.raed.net/img?id=574875">
+        </a>
+        <div id="buttons">
+            <a href="https://www.tiktok.com/@nevarall" class="button" id="tiktok" target="_blank">TikTok</a>
+            <a href="https://www.instagram.com/nevarall/" class="button" id="instagram" target="_blank">Instagram</a>
+            <a href="https://discord.gg/y4H2CK8T" class="button" id="discord" target="_blank">Discord</a>
+        </div>
+    </div>
+
+</body>
+</html>
